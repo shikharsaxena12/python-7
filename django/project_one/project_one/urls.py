@@ -16,7 +16,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from project_one_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',views.default,name="default"),
+    path('list_test/',views.list_test,name="list_test"),
+    path('dict_test/',views.dict_test,name="dict_test"),
+    path('string_test/',views.string_test,name="string_test"),
+    path('shows_number/<int:n>/',views.shows_number,name="shows_number"),
+    path('string_reverse/<str:name>/',views.string_reverse,name="string_reverse"),
+    path("htmlrender/",views.htmlrender,name="htmlrender")
+
 ]
