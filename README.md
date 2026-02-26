@@ -1,1 +1,2 @@
-It is the learning  repo for the python and ai/ml
+It is the learning  repo for the python and ai/ml and django
+
